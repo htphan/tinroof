@@ -1,0 +1,5 @@
+<ol>
+  <% @photos.each do |photo| %>
+    <li><a href="<%= photo.url %>"><%= photo.title %></a></li>
+  <% end %>
+</ol>

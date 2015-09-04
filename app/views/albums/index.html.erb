@@ -1,0 +1,5 @@
+<ol>
+  <% @albums.each do |album| %>
+    <li><a href="album/<%= album.id %>/photos"><%= album.title %></a></li>
+  <% end %>
+</ol>

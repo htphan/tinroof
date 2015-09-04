@@ -1,0 +1,5 @@
+<ol>
+  <% @users.each do |user| %>
+    <li><a href="user/<%= user.id %>/albums"><%= user.name %></a></li>
+  <% end %>
+</ol>

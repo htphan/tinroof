@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'migrate_users', to: 'users#migrate_users'
+  get 'migrate_albums', to: 'albums#migrate_albums'
+
+  root to: 'users#main'
+
+  get 'user/:id/albums', to: 'albums#index'
+  get 'user/:user_id/album/:album_id/photos', to: 'photos#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
